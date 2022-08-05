@@ -1,0 +1,28 @@
+<h1>Генератор пароля</h1>
+
+<form action="password">
+    <select name="lenght">
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12" selected="selected">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+    </select>
+    <br>
+    <input type="checkbox" name="uppercase"> Заглавные буквы
+    <br>
+    <input type="checkbox" name="numbers"> Цифры
+    <br>
+    <input type="checkbox" name="special"> Специальные символы
+    <br>
+    <input type="submit" value="Сгенерировать">
+</form>
+    <br>
+    <br>
+    <a href="{% url 'about' %}">Справка</a>
+
+
